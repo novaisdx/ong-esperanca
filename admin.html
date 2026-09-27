@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta
+            name="description"
+            content="Área administrativa da ONG Esperança."
+        >
+
+        <title>Administrador - ONG Esperança</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <a class="skip-link" href="#conteudo">
+            Pular para o conteúdo
+        </a>
+
+        <header>
+
+            <h1>ONG Esperança</h1>
+
+            <nav aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="voluntario.html">Voluntário</a>
+            </nav>
+
+        </header>
+
+        <main id="conteudo">
+
+            <section>
+
+                <h2>Painel administrativo</h2>
+
+                <p>
+                    Área administrativa demonstrativa para fins acadêmicos.
+                </p>
+
+                <div class="indicadores">
+
+                    <article class="indicador">
+                        <strong id="totalCadastros">
+                            0
+                        </strong>
+
+                        <span>Cadastros</span>
+                    </article>
+
+                    <article class="indicador">
+                        <strong id="totalVoluntarios">
+                            0
+                        </strong>
+
+                        <span>Voluntários</span>
+                    </article>
+
+                    <article class="indicador">
+                        <strong id="totalDoacoes">
+                            R$ 0,00
+                        </strong>
+
+                        <span>Doações simuladas</span>
+                    </article>
+
+                    <article class="indicador">
+                        <strong id="totalNewsletter">
+                            0
+                        </strong>
+
+                        <span>Newsletter</span>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <h2>Informações institucionais</h2>
+
+                <form id="institucionalForm">
+
+                    <label for="campoSobre">
+                        Sobre a ONG:
+                    </label>
+
+                    <textarea
+                        id="campoSobre"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <label for="campoMissao">
+                        Missão:
+                    </label>
+
+                    <textarea
+                        id="campoMissao"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <label for="campoVisao">
+                        Visão:
+                    </label>
+
+                    <textarea
+                        id="campoVisao"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <label for="campoValores">
+                        Valores separados por vírgula:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="campoValores"
+                        required
+                    >
+
+                    <button type="submit">
+                        Salvar informações
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section>
+
+                <h2>Cadastrar projeto</h2>
+
+                <form id="projetoForm">
+
+                    <label for="projetoNome">
+                        Nome do projeto:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="projetoNome"
+                        required
+                    >
+
+                    <label for="projetoCategoria">
+                        Categoria:
+                    </label>
+
+                    <select id="projetoCategoria" required>
+                        <option value="">
+                            Selecione
+                        </option>
+
+                        <option value="educacao">
+                            Educação
+                        </option>
+
+                        <option value="alimentacao">
+                            Alimentação
+                        </option>
+
+                        <option value="meio-ambiente">
+                            Meio Ambiente
+                        </option>
+                    </select>
+
+                    <label for="projetoDescricao">
+                        Descrição:
+                    </label>
+
+                    <textarea
+                        id="projetoDescricao"
+                        rows="4"
+                        required
+                    ></textarea>
+
+                    <label for="projetoImagem">
+                        Endereço da imagem:
+                    </label>
+
+                    <input
+                        type="url"
+                        id="projetoImagem"
+                        placeholder="https://..."
+                        required
+                    >
+
+                    <button type="submit">
+                        Cadastrar projeto
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section>
+
+                <h2>Projetos cadastrados</h2>
+
+                <div id="adminProjetos"></div>
+
+            </section>
+
+            <section>
+
+                <h2>Gerenciar voluntários</h2>
+
+                <div id="adminVoluntarios"></div>
+
+            </section>
+
+            <section>
+
+                <h2>Doações registradas</h2>
+
+                <div id="adminDoacoes"></div>
+
+            </section>
+
+            <section>
+
+                <h2>Newsletter</h2>
+
+                <div id="adminNewsletter"></div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <h2>Contato</h2>
+
+            <address>
+                <p>Email: contato@ongesperanca.org.br</p>
+                <p>Telefone: (11) 3245-4583</p>
+            </address>
+
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>

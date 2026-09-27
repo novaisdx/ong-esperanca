@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 10px;
+    background-color: white;
+    color: #1565c0;
+    padding: 10px 15px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    left: 10px;
+}
+
+header {
+    background-color: #1565c0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1565c0;
+    margin-top: 0;
+}
+
+h3 {
+    color: #1976d2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+ul,
+ol {
+    line-height: 1.8;
+}
+
+main a {
+    color: #1565c0;
+    font-weight: bold;
+}
+
+.indicadores {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.indicador {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.indicador strong {
+    display: block;
+    color: #1565c0;
+    font-size: 30px;
+}
+
+.indicador span {
+    display: block;
+    margin-top: 5px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.galeria figure {
+    margin: 0;
+}
+
+.galeria img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-top: 0;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filtro {
+    background-color: #e3e3e3;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filtro:hover,
+.filtro:focus,
+.filtro.ativo {
+    background-color: #1565c0;
+    color: white;
+}
+
+.projeto-card {
+    border: 1px solid #ddd;
+}
+
+.projeto-card.oculto {
+    display: none;
+}
+
+.oportunidade,
+.noticia {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.documentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #1565c0;
+    color: white !important;
+    text-decoration: none;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao:hover,
+.botao:focus {
+    background-color: #0d47a1;
+}
+
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #1565c0;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #1565c0;
+    border-color: #1565c0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #1565c0;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+button:focus {
+    background-color: #0d47a1;
+}
+
+progress {
+    width: 100%;
+    height: 25px;
+}
+
+.compartilhar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mensagem {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #1565c0;
+}
+
+.certificado {
+    display: none;
+    margin-top: 20px;
+    padding: 25px;
+    border: 2px solid #1565c0;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f9fbff;
+}
+
+.aviso {
+    font-size: 14px;
+    color: #666;
+}
+
+.admin-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.admin-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-pendente {
+    background-color: #fff3cd;
+}
+
+.status-aprovado {
+    background-color: #d1e7dd;
+}
+
+.status-rejeitado {
+    background-color: #f8d7da;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer a {
+    color: white;
+}
+
+@media (max-width: 900px) {
+
+    .indicadores {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    main {
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .indicadores {
+        grid-template-columns: 1fr;
+    }
+
+    .documentos,
+    .compartilhar,
+    .filtros,
+    .admin-acoes {
+        flex-direction: column;
+    }
+
+    button,
+    .botao,
+    .filtro {
+        width: 100%;
+        text-align: center;
+    }
+
+}

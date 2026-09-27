@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta
+            name="description"
+            content="Área do voluntário da ONG Esperança."
+        >
+
+        <title>Área do Voluntário - ONG Esperança</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <a class="skip-link" href="#conteudo">
+            Pular para o conteúdo
+        </a>
+
+        <header>
+
+            <h1>ONG Esperança</h1>
+
+            <nav aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="voluntario.html">Área do voluntário</a>
+            </nav>
+
+        </header>
+
+        <main id="conteudo">
+
+            <section>
+
+                <h2>Área do voluntário</h2>
+
+                <p>
+                    Informe o e-mail utilizado no cadastro para
+                    consultar seu histórico.
+                </p>
+
+                <form id="historicoForm">
+
+                    <label for="emailHistorico">
+                        E-mail:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="emailHistorico"
+                        required
+                    >
+
+                    <button type="submit">
+                        Consultar histórico
+                    </button>
+
+                </form>
+
+            </section>
+
+            <section id="resultadoHistorico">
+
+                <h2>Histórico de participação</h2>
+
+                <p>
+                    Digite seu e-mail acima para consultar suas informações.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>Certificado digital</h2>
+
+                <p>
+                    Digite seu nome para gerar um certificado demonstrativo.
+                </p>
+
+                <form id="certificadoForm">
+
+                    <label for="nomeCertificado">
+                        Nome:
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeCertificado"
+                        required
+                    >
+
+                    <button type="submit">
+                        Gerar certificado
+                    </button>
+
+                </form>
+
+                <div
+                    id="certificado"
+                    class="certificado"
+                    aria-live="polite"
+                ></div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <h2>Contato</h2>
+
+            <address>
+                <p>Email: contato@ongesperanca.org.br</p>
+                <p>Telefone: (11) 3245-4583</p>
+            </address>
+
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta
+            name="description"
+            content="Conheça os projetos sociais da ONG Esperança, oportunidades de voluntariado e campanhas de doação."
+        >
+
+        <meta
+            name="keywords"
+            content="ONG, educação, alimentação, meio ambiente, voluntariado, doações"
+        >
+
+        <meta name="author" content="ONG Esperança">
+
+        <title>Projetos - ONG Esperança</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <a class="skip-link" href="#conteudo">
+            Pular para o conteúdo
+        </a>
+
+        <header>
+
+            <h1>ONG Esperança</h1>
+
+            <nav aria-label="Navegação principal">
+                <a href="index.html">Início</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="voluntario.html">Área do voluntário</a>
+            </nav>
+
+        </header>
+
+        <main id="conteudo">
+
+            <section>
+
+                <h2>Projetos Sociais</h2>
+
+                <p>
+                    A ONG Esperança desenvolve projetos sociais para
+                    ajudar a comunidade.
+                </p>
+
+                <picture>
+                    <source srcset="imagens/projetos.webp" type="image/webp">
+
+                    <img
+                        src="imagens/projetos.jpg"
+                        alt="Voluntários realizando trabalho voluntário">
+                </picture>
+
+            </section>
+
+            <section>
+
+                <h2>Categorias dos projetos</h2>
+
+                <div
+                    class="filtros"
+                    role="group"
+                    aria-label="Filtrar projetos"
+                >
+
+                    <button
+                        type="button"
+                        class="filtro ativo"
+                        data-filtro="todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro"
+                        data-filtro="educacao"
+                    >
+                        Educação
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro"
+                        data-filtro="alimentacao"
+                    >
+                        Alimentação
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filtro"
+                        data-filtro="meio-ambiente"
+                    >
+                        Meio Ambiente
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section id="listaProjetos">
+
+            </section>
+
+            <section>
+
+                <h2>Galeria de atividades</h2>
+
+                <div class="galeria">
+
+                    <figure>
+                        <img
+                            src="imagens/projetos.jpg"
+                            alt="Voluntários participando de projeto social"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            Ações sociais
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="imagens/educacao.jpg"
+                            alt="Crianças participando de atividade educativa"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            Educação
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="imagens/alimentacao.jpg"
+                            alt="Voluntários organizando alimentos"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            Alimentação
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="imagens/meio-ambiente.jpg"
+                            alt="Voluntários realizando atividade ambiental"
+                            loading="lazy"
+                        >
+
+                        <figcaption>
+                            Meio ambiente
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <h2>Oportunidades de voluntariado</h2>
+
+                <article class="oportunidade">
+
+                    <h3>Professor voluntário</h3>
+
+                    <p>
+                        Auxilie crianças e jovens nas atividades educacionais.
+                    </p>
+
+                    <a href="cadastro.html">
+                        Quero participar
+                    </a>
+
+                </article>
+
+                <article class="oportunidade">
+
+                    <h3>Distribuição de alimentos</h3>
+
+                    <p>
+                        Ajude na organização e distribuição de alimentos.
+                    </p>
+
+                    <a href="cadastro.html">
+                        Quero participar
+                    </a>
+
+                </article>
+
+                <article class="oportunidade">
+
+                    <h3>Ação ambiental</h3>
+
+                    <p>
+                        Participe de ações de reciclagem, limpeza e plantio.
+                    </p>
+
+                    <a href="cadastro.html">
+                        Quero participar
+                    </a>
+
+                </article>
+
+            </section>
+
+            <section>
+
+                <h2>Como ser voluntário</h2>
+
+                <p>
+                    Você pode fazer parte da ONG Esperança participando
+                    de nossos projetos.
+                </p>
+
+                <ol>
+                    <li>Acesse a página de cadastro.</li>
+                    <li>Preencha seus dados.</li>
+                    <li>Escolha como deseja participar.</li>
+                    <li>Aguarde a análise da equipe.</li>
+                </ol>
+
+                <a href="cadastro.html" class="botao">
+                    Quero ser voluntário
+                </a>
+
+            </section>
+
+            <section>
+
+                <h2>Como fazer uma doação</h2>
+
+                <p>
+                    Sua contribuição ajuda a manter os projetos sociais.
+                </p>
+
+                <h3>Campanha atual</h3>
+
+                <p>
+                    <strong>
+                        Campanha Alimentação para Todos
+                    </strong>
+                </p>
+
+                <p id="valorArrecadado">
+                    Arrecadado:
+                    <strong>R$ 6.500,00</strong>
+                </p>
+
+                <p>
+                    Meta:
+                    <strong>R$ 10.000,00</strong>
+                </p>
+
+                <progress
+                    id="progressoDoacao"
+                    value="6500"
+                    max="10000"
+                >
+                </progress>
+
+                <p id="percentualDoacao">
+                    65% da meta alcançada.
+                </p>
+
+                <form id="doacaoForm">
+
+                    <label for="valorDoacao">
+                        Valor da doação:
+                    </label>
+
+                    <select
+                        id="valorDoacao"
+                        name="valorDoacao"
+                        required
+                    >
+                        <option value="">Selecione</option>
+                        <option value="20">R$ 20,00</option>
+                        <option value="50">R$ 50,00</option>
+                        <option value="100">R$ 100,00</option>
+                        <option value="200">R$ 200,00</option>
+                    </select>
+
+                    <label for="formaPagamento">
+                        Forma de pagamento:
+                    </label>
+
+                    <select
+                        id="formaPagamento"
+                        name="formaPagamento"
+                        required
+                    >
+                        <option value="">Selecione</option>
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+
+                    <button type="submit">
+                        Realizar doação
+                    </button>
+
+                </form>
+
+                <p class="aviso">
+                    Esta doação é uma simulação para fins acadêmicos.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>Compartilhe nossos projetos</h2>
+
+                <div class="compartilhar">
+
+                    <button
+                        type="button"
+                        id="compartilharWhatsApp"
+                    >
+                        Compartilhar no WhatsApp
+                    </button>
+
+                    <button
+                        type="button"
+                        id="compartilharFacebook"
+                    >
+                        Compartilhar no Facebook
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section>
+
+                <h2>Certificados digitais</h2>
+
+                <p>
+                    Voluntários podem consultar seu histórico e gerar
+                    um certificado demonstrativo.
+                </p>
+
+                <a href="voluntario.html" class="botao">
+                    Área do voluntário
+                </a>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <h2>Contato</h2>
+
+            <address>
+                <p>Email: contato@ongesperanca.org.br</p>
+                <p>Telefone: (11) 3245-4583</p>
+            </address>
+
+            <p>
+                © 2026 ONG Esperança - Projeto acadêmico
+            </p>
+
+        </footer>
+
+        <script src="./script.js"></script>
+
+    </body>
+</html>
