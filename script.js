@@ -21,7 +21,7 @@ const projetosPadrao = [
         categoria: "educacao",
         descricao:
             "O projeto oferece atividades educacionais e apoio escolar para crianças e jovens da comunidade.",
-        imagem: "imagens/educacao.jpg",
+        imagem: "imagens/ong.jpg",
         objetivos: [
             "Incentivar a educação.",
             "Auxiliar no desenvolvimento escolar.",
@@ -40,7 +40,7 @@ const projetosPadrao = [
         categoria: "alimentacao",
         descricao:
             "O projeto arrecada e distribui alimentos para famílias em situação de vulnerabilidade social.",
-        imagem: "imagens/alimentacao.jpg",
+        imagem: "imagens/projetos.jpg",
         objetivos: [
             "Distribuição de cestas básicas.",
             "Arrecadação de alimentos.",
@@ -59,7 +59,7 @@ const projetosPadrao = [
         categoria: "meio-ambiente",
         descricao:
             "O projeto promove ações de preservação ambiental, reciclagem e conscientização da comunidade.",
-        imagem: "imagens/meio-ambiente.jpg",
+        imagem: "imagens/cadastro.jpg",
         objetivos: [
             "Campanhas de reciclagem.",
             "Plantio de árvores.",
